@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenuActivity"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/titleMainMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titleMainMenu"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btnComenzar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp"
+        android:onClick="comenzarJuego"
+        android:background="@drawable/button_shape"
+        android:text="@string/btnComenzar"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/btnPuntuaciones"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp"
+        android:background="@drawable/button_shape"
+        android:onClick="mostarPuntuaciones"
+        android:text="@string/btnPuntuaciones"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

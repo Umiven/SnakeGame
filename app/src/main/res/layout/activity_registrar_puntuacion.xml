@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrarPuntuacionActivity"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/titleMuerte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titleMuerte"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/titleRegistarPuntuacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titleRegistrarPuntuacion"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/nombrePuntuacionEt"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp"
+        android:onClick="registrar"
+        android:background="@drawable/button_shape"
+        android:text="@string/btnRegistrar"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/btnReintentar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp"
+        android:onClick="reintentar"
+        android:background="@drawable/button_shape"
+        android:text="@string/btnReintentar"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnMenuPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp"
+        android:onClick="volverMenu"
+        android:background="@drawable/button_shape"
+        android:text="@string/btnMenuPrincipal"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+
+</LinearLayout>
